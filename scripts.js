@@ -1,8 +1,9 @@
-const menu = document.querySelector('.nav-menu-hamburguer');
-const traco = document.querySelector('.menu-hamburguer');
+const navMenuHamburguer = document.querySelector('.nav-menu-hamburguer');
+const menuHamburguer = document.querySelector('.menu-hamburguer');
 
-const aparecer = function(){
-    menu.classList.toggle('mostrarNav');
+const atualizarMenu = function(){
+    navMenuHamburguer.classList.toggle('mostrarNav');
+    menuHamburguer.classList.toggle('ativo');
 }
 
-traco.onclick = aparecer;
+menuHamburguer.onclick = atualizarMenu;

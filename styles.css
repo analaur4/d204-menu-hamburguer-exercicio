@@ -18,18 +18,35 @@ h3{
     align-items: center;
     cursor: pointer;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     width: 30px;
 }
 
 .menu-hamburguer span{
     background-color: white;
-    border-radius: 0 30px;
+    border-radius: 30px;
+    display: block;
     height: 3px;
     margin: 3px 0;
     transition: 0.5s;
     width: 100%;
+}
+
+.menu-hamburguer span:nth-child(1), .menu-hamburguer span:nth-child(3){
+    transform-origin: right center;
+}
+
+.menu-hamburguer.ativo span:nth-child(1){
+    transform: rotateZ(-37deg);
+}
+
+.menu-hamburguer.ativo span:nth-child(2){
+    opacity: 0;
+}
+
+.menu-hamburguer.ativo span:nth-child(3){
+    transform: rotateZ(37deg);
 }
 
 .nav-menu-hamburguer{
